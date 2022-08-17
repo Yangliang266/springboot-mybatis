@@ -33,7 +33,7 @@ public class EmployeeController {
     @RequestMapping(value = "/emp/{ids}", method = RequestMethod.DELETE)
     public Msg deleteEmp(@PathVariable("ids") String ids) {
         if (ids.contains("-")) {
-            //批量删除
+            //批量删除hello
             List<Integer> del_ids = new ArrayList<>();
             String[] str_ids = ids.split("-");
             //组装id的集合
